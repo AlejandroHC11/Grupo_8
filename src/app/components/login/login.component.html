@@ -5,6 +5,7 @@
                 <div class="panel border bg-white">
                     <div class="panel-heading">
                         <h3 class="pt-3 font-weight-bold">Login</h3>
+                        <img id="profile" src="assets/img/profile.png" alt="Profile">
                     </div>
                     <div class="panel-body p-3">
                         <form [formGroup]="loginForm">
@@ -27,7 +28,8 @@
                             <div class="from-inline fr mt-4">
                                 <a id="forget" class="font-weight-bold">Forget Password</a>
                             </div>
-                            <button (click)="onSubmit()" type="submit"  [routerLink]="['/prestatario']" class="btn btn-dark btn-block mt-4 w-100">Login</button>
+                            <button (click)="onLogin()" type="submit"   class="btn btn-dark btn-block mt-4 w-100">Login</button> 
+                            <!-- [routerLink]="['/prestatario']" -->
                             <!-- <div class="text-center pt-4 text-muted">Don't have account? <a id="forget" routerLink="/signup">Sign Up</a></div> -->
                             <button  type="submit"  [routerLink]="['/signup']" class="btn btn-dark btn-block mt-4 w-100">REGISTRARSE</button>                           
                         </form>

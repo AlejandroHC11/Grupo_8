@@ -9,6 +9,8 @@ import { PrestamosComponent } from './components/prestamos/prestamos.component';
 import { NewComponent } from './components/new/new.component';
 import { EmptyComponent } from './components/empty/empty.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     SignupComponent,
     PrestamosComponent,
     NewComponent,
-    EmptyComponent
+    EmptyComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path:'login',component:LoginComponent},
+      {path:'dashboard',component:DashboardComponent},
       {path:'signup',component:SignupComponent},
       {path:'prestatario',component:PrestatarioComponent, children: [
         { path: '', component: EmptyComponent },
