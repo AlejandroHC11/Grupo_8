@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Prestamo } from '../models/prestamo';
+import { Prestamo } from '../models/prestamo/prestamo';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -16,6 +16,6 @@ export class PrestamoService {
   }
 
   createPrestamo(prestamo: Prestamo): Observable<Prestamo> {
-    return this.httpClient.post<Prestamo>(this.url + "CreatePrestamo", prestamo);
+    return this.httpClient.post<Prestamo>(this.url + "CrearPrestamo", prestamo);
   }
 }

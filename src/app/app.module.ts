@@ -9,6 +9,7 @@ import { PrestamosComponent } from './components/prestamos/prestamos.component';
 import { NewComponent } from './components/new/new.component';
 import { EmptyComponent } from './components/empty/empty.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     EmptyComponent
   ],
   imports: [
+    FormsModule,
     HttpClientModule,
     BrowserModule,
     RouterModule.forRoot([

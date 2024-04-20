@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Prestamo } from 'src/app/models/prestamo';
+import { Prestamo } from 'src/app/models/prestamo/prestamo';
 import { PrestamoService } from 'src/app/services/prestamo.service';
 
 @Component({
