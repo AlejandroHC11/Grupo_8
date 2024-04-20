@@ -8,6 +8,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { PrestamosComponent } from './components/prestamos/prestamos.component';
 import { NewComponent } from './components/new/new.component';
 import { EmptyComponent } from './components/empty/empty.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EmptyComponent } from './components/empty/empty.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path:'login',component:LoginComponent},
       {path:'signup',component:SignupComponent},
